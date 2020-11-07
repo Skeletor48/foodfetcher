@@ -1,0 +1,2 @@
+PORT=<your fav port>
+HEROKU_PROXY= port for a heroku depolyed cors-everywhere servere

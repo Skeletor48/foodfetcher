@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: linear-gradient(45deg, #7175da, #9790f2); */
+    background: rgb(0, 188, 212);
+    background: linear-gradient(
+        230deg,
+        rgba(0, 188, 212, 1) 32%,
+        rgba(189, 189, 189, 1) 50%
+    );
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.menu-container {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin-top: -50px;
+}
+
+.menu-container.active {
+    transform: rotateY(360deg);
+}
+
+.menu {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 700px;
+    position: relative;
+}
+
+.menu-info.up {
+    transform: translateY(-5%);
+    transition: transform 0.2s ease-in;
+}
+
+
+.allergic-menu {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 700px;
+    position: relative;
+}
+
+.allergic-menu.showAllergic {
+    transform: translateY(35%);
+    transition: transform 0.2s ease-in;
+}
+
+.allergic-menu.hideAllergic {
+    transform: translateZ(50%);
+    transition: transform 0.2s ease-in;
+}
+
+.menu h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu.is-flipped {
+    transform: rotateY(720deg);
+    transition: transform 0.6s ease-in;
+}
+
+.menu h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.menu-preview {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 30px;
+    min-width: 160px;
+    width: 170px;
+    z-index: 99;
+}
+
+.menu-details.active {
+    transform: translateX(94%);
+    transition: transform 0.2s ease-in;
+}
+
+.menu-details.inactive {
+    transform: translateX(0%);
+    transition: transform 0.2s ease-in;
+}
+
+.menu-details {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 30px;
+    border-right: #bdbdbd solid 2px;
+    min-width: 160px;
+    width: 170px;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: 98;
+}
+
+.menu-preview a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.menu-info {
+    padding: 30px;
+    color: #212121;
+    position: relative;
+    width: 100%;
+}
+
+.menu-info h6 {
+    color: #757575;
+}
+.main-course {
+}
+
+.btn {
+    background-color: #607d8b;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 1px;
+}
+
+.btn:active {
+    outline: none;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+    transform: scale(0.96);
+}
+
+.soup-date {
+    display: flex;
+}
+
+.soup {
+    float: left;
+    margin: 0 1.5%;
+    width: 86%;
+}
+
+.date {
+    float: right;
+    margin: 0 1.5%;
+    width: 14%;
+}
+
+.allergens-info {
+    padding: 30px;
+    color: #212121;
+    position: relative;
+    width: 100%;
+	opacity: 0.7;
+	display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.allergens-info.active {
+    transform: translateY(94%);
+    transition: transform 0.2s ease-in;
+}
+
+.allergens-info.inactive {
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in;
+}
+
+
+.list-inline {
+	display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.list-inline > li {
+	display: inline;
+}
+
+.arrow-icon {
+    align-items: center;
+    margin-top: 10px;
+}
