@@ -110,7 +110,7 @@ My feelings are the same about the two separated APIs on server side.
 
 -
 
- ![](client/src/assets/image3.png)
+ ![](client/src/assets/image2.png)
 
  ![](client/src/assets/image3.png)
 
