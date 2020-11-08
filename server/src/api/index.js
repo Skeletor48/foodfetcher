@@ -1,5 +1,5 @@
 import express from "express";
-import menuRouter from "./routes/menuRouter.js.js";
+import menuRouter from "./routes/menuRouter.js";
 
 export default () => {
     const router = express.Router();

@@ -1,4 +1,4 @@
-import menuController from '../../controllers/menuController.js.js';
+import menuController from '../../controllers/menuController.js';
 
 export default (router) => {
 

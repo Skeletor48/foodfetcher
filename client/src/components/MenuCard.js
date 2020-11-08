@@ -10,6 +10,11 @@ const pathMap = {
 
 export default function MenuCard({ menuData, colors, openHandler }) {
     const location = useLocation();
+    const [menuInfo, setMenuInfo] = useState({
+        price: 'Loading...',
+        soup: 'Loading...',
+        mainCourse: 'Loading...',
+    });
     const [menuPath] = useState(pathMap[location.pathname]);
     const [detailsToggle, setDetailsToggle] = useState(true);
 
@@ -20,7 +25,10 @@ export default function MenuCard({ menuData, colors, openHandler }) {
         button.style.backgroundColor = colors.btn;
         previewContainer.style.backgroundColor = colors.bg;
         detailsContainer.style.backgroundColor = colors.bg;
-    });
+        if (menuData) {
+            setMenuInfo(menuData);
+        }
+    }, [menuData, colors]);
 
     const toggleDetails = (e) => {
         setDetailsToggle(!detailsToggle);
@@ -40,12 +48,6 @@ export default function MenuCard({ menuData, colors, openHandler }) {
         }
 
         openHandler();
-    };
-
-    const toggleMenu = () => {
-        const menuCard = document.querySelector('.menu');
-        menuCard.classList.toggle('is-flipped')
-
     };
 
     const getMenuTitle = (path) => {
@@ -72,10 +74,10 @@ export default function MenuCard({ menuData, colors, openHandler }) {
                 </div>
                 <div className='menu-details'>
                     <h6>Price</h6>
-                    <h4>{menuData.price}</h4>
+                    <h4>{menuInfo.price}</h4>
                     <h6>Allergens</h6>
                     <div className='arrow-icon'>
-                        <i 
+                        <i
                             className='fa fa-arrow-down fa-3x'
                             aria-hidden='true'></i>
                     </div>
@@ -85,12 +87,15 @@ export default function MenuCard({ menuData, colors, openHandler }) {
                         <h6 className='soup'>Soup</h6>
                         <h6 className='date'>{getDate()}</h6>
                     </div>
-                    <h2>{menuData.soup}</h2>
+                    <h2>{menuInfo.soup}</h2>
 
                     <h6 className='main-course'>Main course</h6>
-                    <h2>{menuData.mainCourse}</h2>
+                    <h2>{menuInfo.mainCourse}</h2>
+
                     <Link to={menuPath}>
-                        <button onClick={toggleMenu} className='btn'>
+                        <button
+                            disabled={!detailsToggle}
+                            className='btn'>
                             Show {getMenuTitle(menuPath)}
                         </button>
                     </Link>

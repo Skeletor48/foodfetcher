@@ -1,4 +1,4 @@
-import menuService from '../services/menuService.js.js';
+import menuService from '../services/menuService.js';
 
 export default class MenuController {
     getData = async (req, res, targetUrl) => {

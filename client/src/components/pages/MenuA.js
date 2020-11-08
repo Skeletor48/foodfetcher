@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../../App.css';
-import MenuCard from '../MenuCard.js.js';
-import { getMenuData } from '../../api/menuApi.js.js';
-import Allergens from '../Allergens.js.js';
+import MenuCard from '../MenuCard.js';
+import { getMenuData } from '../../api/menuApi.js';
+import Allergens from '../Allergens.js';
 
 const colorData = {
     bg: '#f44336',
@@ -33,13 +33,11 @@ export default function MenuA() {
 
     return (
         <>
-            {menuData && (
                 <MenuCard
                     menuData={menuData}
                     colors={colorData}
                     openHandler={() => toggleAllergenicInfos()}
                 />
-            )}
             {menuData && showAllergens && (
                 <Allergens allergens={menuData.allergens} showAllergens />
             )}

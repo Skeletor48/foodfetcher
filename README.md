@@ -97,15 +97,15 @@ $ docker pull skeletor48/food-fetcher-client:latest
 $ docker run -p < your favourite port, I used 8060 >:8040 -d skeletor48/food-fetcher-client:latest
 ```
 
-Fingers crossed... now in your browser on http://localhost:8060/manu-a  or on http://localhost:8060/manu-b  the app should run. 
+Fingers crossed... now in your browser on http://localhost:8060/menu-a  or on http://localhost:8060/menu-b  the app should run. 
 
 
 ### Use te app
 
 
-The app has basicly two sites as it was requested by the task 
-However they are totally the same, 
-hence I guess it would be much more convinient to use only one route, one component and less code. 
+The app has basically two sites as it was requested by the task.
+However they are totally the same.
+Hence I guess it would be much more convinient to use only one route, one component and less code. 
 My feelings are the same about the two separated APIs on server side.
 
 -
@@ -117,14 +117,14 @@ My feelings are the same about the two separated APIs on server side.
  ![](client/src/assets/image4.png)
 
  The so called interface is pretty easy. We have two buttons. 
- Whan is expands the modal like menu card and the other 
+ One is expands the modal like menu card and the other 
  is routes to the other page aka. to the other menu card.
 
 
 ### Notes
 
 - The app is inrcedibly slow, I had to decide if I show the items hanging in the air empty or hide them till the data arrives. 
-I ve choosed the second option. I will definelatly take my time to improve the overall performance. At this stage it send a request almost on every rerouting, 
+I've choosed the second option. I will definelatly take my time to improve the overall performance. At this stage it send a request almost on every rerouting, 
 - Both on client and server side it could be more simple with less code
 - There is no proper error handling in the project, also a good logger class would be great to implement
 - I have to mention the obvious fact that I did not implement any tests. :sweat: I am truly ashamed.

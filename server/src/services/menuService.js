@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
-import config from '../config/index.js.js';
-import dataProcessor from '../utils/dataProcessor.js.js';
+import config from '../config/index.js';
+import dataProcessor from '../utils/dataProcessor.js';
 
 export default class MenuService {
     crawlData = async (targetUrl) => {
