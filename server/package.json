@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon ./src/server.js",
+    "start": "./src/server.js",
     "test": "test"
   },
   "author": "Skeletor48",
@@ -18,5 +19,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": "v12.19.0"
   }
 }

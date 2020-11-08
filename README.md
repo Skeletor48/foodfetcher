@@ -77,7 +77,7 @@ $ docker pull skeletor48/food-fetcher-server:latest
 Now we can run it:
 
 ```sh
-$ docker run --env-file=.env -p 7008:7000 -d skeletor48/food-fetcher-server:latest
+$ docker run --env-file=.env -p 7000:7000 -d skeletor48/food-fetcher-server:latest
 ```
 
 > HINT! After the *-p* port parameter the first number is the host's port where we expose our image's port 
@@ -94,10 +94,10 @@ $ docker pull skeletor48/food-fetcher-client:latest
 ```
 
 ```sh
-$ docker run -p < your favourite port, I used 8060 >:8040 -d skeletor48/food-fetcher-client:latest
+$ docker run -p < your favourite port, I used 8048:8048 > -d skeletor48/food-fetcher-client:latest
 ```
 
-Fingers crossed... now in your browser on http://localhost:8060/menu-a  or on http://localhost:8060/menu-b  the app should run. 
+Fingers crossed... now in your browser on http://localhost:8048/menu-a  or on http://localhost:8048/menu-b  the app should run. 
 
 
 ### Use te app
