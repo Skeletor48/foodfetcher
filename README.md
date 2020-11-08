@@ -110,11 +110,11 @@ My feelings are the same about the two separated APIs on server side.
 
 -
 
- ![](assets/image3.png)
+ ![](client/src/assets/image3.png)
 
- ![](assets/image3.png)
+ ![](client/src/assets/image3.png)
 
- ![](assets/image4.png)
+ ![](client/src/assets/image4.png)
 
  The so called interface is pretty easy. We have two buttons. 
  Whan is expands the modal like menu card and the other 
