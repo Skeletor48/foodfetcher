@@ -48,13 +48,13 @@ HEROKU_PROXY= I know it is not a good pattern to share this type of info but fee
 
 Now you should start the server:
 
-```sh
+```sh`
 $ cd server
-$ npm run serve
+$ npm run dev
 ```
 
 and the client:
-
+`
 ```sh
 $ cd ..
 $ cd client
