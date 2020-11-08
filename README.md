@@ -145,5 +145,5 @@ I ve choosed the second option. I will definelatly take my time to improve the o
 
 [node.js]: <http://nodejs.org>
 [express]: <http://expressjs.com>
-[React]: <https://reactjs.org/>
+[React.js]: <https://reactjs.org/>
 [Heroku]: <https://www.heroku.com/>
