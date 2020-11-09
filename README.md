@@ -12,7 +12,7 @@
 - [Installation](#installation)
   * [Start up in localhost](#method-1-start-up-in-localhost)
   * [The Docker way](#method-2-the-docker-way)
-  * [It is deployed on Heroku!](#method-3-it-is-deployed-on-heroku!)
+  * [:skull: It is deployed on Heroku! :skull:](#method-3-it-is-deployed-on-heroku)
 - [ Use the app](#use-the-app)
 - [Notes](#notes)
 - [Resources](#resources)
@@ -115,8 +115,8 @@ Fingers crossed... now in your browser on http://localhost:8048/menu-a  or on ht
 
 #### Method 3: It is deployed on Heroku!
 
-The server is running on the address: [server](https://food-fetcher.herokuapp.com/api/menus/a "Food Fetcher Server"))
-And you can check the working client here: [Client](https://immense-hollows-87899.herokuapp.com/menu-a "Food Fetcher Client")
+:skull: The server is running on the address: [server](https://food-fetcher.herokuapp.com/api/menus/a "Food Fetcher Server")) :skull:
+:skull: And you can check the working client here: [Client](https://immense-hollows-87899.herokuapp.com/menu-a "Food Fetcher Client") :skull:
 
 
 ### Use the app
