@@ -5,6 +5,19 @@
   - To implement a server wich is able to somehow grab data from a third party website. 
   - Than parse it to the required format and 
   - display it on a web client written in React JS
+
+#### Table of contents
+
+- [Tech](#tech)
+- [Installation](#installation)
+  * [Start up in localhost](#method-1-start-up-in-localhost)
+  * [The Docker way](#method-2-the-docker-way)
+  * [It is deployed on Heroku!](#method-3-it-is-deployed-on-heroku!)
+- [ Use the app](#use-the-app)
+- [Notes](#notes)
+- [Resources](#resources)
+
+
  
 ### Tech
 The used technologies are:
@@ -100,7 +113,13 @@ $ docker run -p < your favourite port, I used 8048:8048 > -d skeletor48/food-fet
 Fingers crossed... now in your browser on http://localhost:8048/menu-a  or on http://localhost:8048/menu-b  the app should run. 
 
 
-### Use te app
+#### Method 3: It is deployed on Heroku!
+
+The server is running on the address: [server](https://food-fetcher.herokuapp.com/api/menus/a "Food Fetcher Server"))
+And you can check the working client here: [Client](https://immense-hollows-87899.herokuapp.com/menu-a "Food Fetcher Client")
+
+
+### Use the app
 
 
 The app has basically two sites as it was requested by the task.
