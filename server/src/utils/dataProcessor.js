@@ -48,7 +48,9 @@ const getAllergensList = (html) => {
 				.replace(/src="/g, '')
 				.replace(/src=\\/g, '')
 				.replace(/"/g,'')
-				.replace(/\\https/g, 'https');
+				.replace(/\\https/g, 'https')
+				.replace(/.jpg\\/g, '.jpg');
+				
                 allergens.add(allergen);
             }
         });
