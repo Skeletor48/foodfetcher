@@ -41,12 +41,18 @@ const getAllergensList = (html) => {
         const linkArray = item.split(' ');
 
         linkArray.forEach((link) => {
-            if (link.match(/https/) && link.match(/-001.jpg/)) {
-                const allergen = link.replace(/src="/g, '').replace(/'/g, "").replace(/"/g, "");
-
+			const uploadRegexp = new RegExp('millcantin.hu','g');
+            if (link.match(uploadRegexp) && link.match(/-001.jpg/)) {
+				const allergen = link
+				.replace(/\\\//g, '\\')
+				.replace(/src="/g, '')
+				.replace(/src=\\/g, '')
+				.replace(/"/g,'')
+				.replace(/\\https/g, 'https');
                 allergens.add(allergen);
             }
         });
-    });
+	});
+	
     return Array.from(allergens);
 };
